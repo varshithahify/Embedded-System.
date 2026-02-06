@@ -1,0 +1,47 @@
+int rainPin = A0;
+int soundPin = A1;
+int relayPin = 7;
+
+int rainThreshold = 550; 
+int soundThreshold = 750;
+
+unsigned long relayHoldTime = 8000;
+long lastSoundTime = -8000;   // FIX: start as if 8 sec already passed
+
+void setup() {
+  Serial.begin(9600);
+
+  pinMode(relayPin, OUTPUT);
+  digitalWrite(relayPin, HIGH);  // Relay OFF
+}
+
+void loop() {
+
+  int rainValue = analogRead(rainPin);
+  int soundValue = analogRead(soundPin);
+
+  Serial.print("Rain: ");
+  Serial.print(rainValue);
+  Serial.print(" | Sound: ");
+  Serial.println(soundValue);
+
+  //  Rain detection (instant)
+  bool rainDetected = (rainValue < rainThreshold);
+
+  //  Sound detection (updates timer)
+  if (soundValue > soundThreshold) {
+    lastSoundTime = millis();
+  }
+
+  //  Sound hold for 8 seconds only after real sound
+  bool soundDetected = (millis() - lastSoundTime < relayHoldTime);
+
+  //  Relay logic (rain OR sound)
+  if (rainDetected || soundDetected) {
+    digitalWrite(relayPin, LOW);   // Relay ON
+  } else {
+    digitalWrite(relayPin, HIGH);  // Relay OFF
+  }
+
+  delay(50);
+}
