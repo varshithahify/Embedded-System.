@@ -7,6 +7,7 @@ An intelligent embedded system that automatically protects household appliances 
 Electrical storms, lightning strikes, and sudden voltage fluctuations can cause severe damage to household appliances. This project introduces a smart Arduino-powered protection system that continuously monitors environmental conditions using rain and sound sensors.
 When storm conditions are detected, the system instantly disconnects connected appliances through a relay module, minimizing the risk of electrical damage and improving household safety.
 
+
 🚀 Key Features
 
 ✅ Automatic Storm Detection
@@ -25,6 +26,7 @@ When storm conditions are detected, the system instantly disconnects connected a
 
 ✅ Compact and Easy-to-Install Design
 
+
 🎯 Problem Statement
 
 Traditional surge protectors and manual switching methods often fail to provide proactive protection during electrical storms.
@@ -38,6 +40,7 @@ Automatically disconnect appliances
 Reduce repair and replacement costs
 
 Improve electrical safety in homes and small businesses
+
 
 🏗️ System Architecture
              
@@ -84,6 +87,7 @@ Improve electrical safety in homes and small businesses
 | Jumper Wires        | As Required |
 | 9V Battery          | 1           |
 
+
 💻 Software Requirements
 
 Arduino IDE
@@ -92,7 +96,9 @@ Arduino UNO Board Package
 
 C/C++ Programming
 
+
 ⚙️ Working Principle
+
 
 Normal Condition:
 
@@ -105,12 +111,14 @@ Normal Condition:
   Appliances receive power normally
   
   Storm Condition
+
   
 When:
 
   Rain is detected OR
   
   Thunder is detected
+
   
 The Arduino:
 
@@ -126,6 +134,7 @@ The Arduino:
   
 After conditions become safe, power is restored automatically.
 
+
 📈 Performance
 
 | Parameter                | Value       |
@@ -136,6 +145,7 @@ After conditions become safe, power is restored automatically.
 | Power Consumption        | 50–80 mA    |
 | Project Cost             | < ₹1500     |
 Based on prototype testing and validation results.
+
 
 🔌 Circuit Connections
 
@@ -152,6 +162,7 @@ Based on prototype testing and validation results.
       GND -> GND
       IN  -> D7
 
+
 📷 Project Demonstration
 
     System States
@@ -163,6 +174,7 @@ Based on prototype testing and validation results.
         Storm Detected
         Appliances Disconnected
         Red LED ON
+
   
 🎯 Applications
 
@@ -173,6 +185,7 @@ Based on prototype testing and validation results.
     Agricultural Equipment Protection
     Remote Monitoring Stations
     IoT Home Automation Systems
+
 
 🔮 Future Enhancements
 
@@ -185,6 +198,7 @@ Based on prototype testing and validation results.
     Smart Home Integration
     AI-Based Storm Prediction
 
+
 👨‍💻 Team Members
 
 | Name                   | USN        |
@@ -193,6 +207,7 @@ Based on prototype testing and validation results.
 | Shreya R               | 1DB23EC147 |
 | Srujana M V            | 1DB23EC158 |
 | V N Varshitha          | 1DB23EC172 |
+
 
 🎓 Academic Information
 
