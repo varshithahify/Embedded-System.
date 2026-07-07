@@ -33,13 +33,13 @@ Traditional surge protectors and manual switching methods often fail to provide 
 
 This project aims to:
 
-Detect storm conditions before electrical damage occurs
+> Detect storm conditions before electrical damage occurs
 
-Automatically disconnect appliances
+> Automatically disconnect appliances
 
-Reduce repair and replacement costs
+> Reduce repair and replacement costs
 
-Improve electrical safety in homes and small businesses
+> Improve electrical safety in homes and small businesses
 
 
 🏗️ System Architecture
@@ -90,47 +90,46 @@ Improve electrical safety in homes and small businesses
 
 💻 Software Requirements
 
-Arduino IDE
+1. Arduino IDE
 
-Arduino UNO Board Package
+2. Arduino UNO Board Package
 
-C/C++ Programming
+3. C/C++ Programming
 
 
 ⚙️ Working Principle
 
-
 Normal Condition:
 
-  Rain sensor detects no rainfall
+  > Rain sensor detects no rainfall
   
-  Sound sensor detects no thunder
+  > Sound sensor detects no thunder
   
-  Relay remains ON
+  > Relay remains ON
   
-  Appliances receive power normally
+  > Appliances receive power normally
   
-  Storm Condition
+  > Storm Condition
 
   
 When:
 
-  Rain is detected OR
+  > Rain is detected OR
   
-  Thunder is detected
+  > Thunder is detected
 
   
 The Arduino:
 
-  Processes sensor data
+  > Processes sensor data
   
-  Activates protection mode
+  > Activates protection mode
   
-  Turns OFF relay
+  > Turns OFF relay
   
-  Disconnects appliances
+  > Disconnects appliances
   
-  Turns ON protection indicator LED
+  > Turns ON protection indicator LED
   
 After conditions become safe, power is restored automatically.
 
