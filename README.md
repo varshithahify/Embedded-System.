@@ -1,28 +1,42 @@
 ⚡ Arduino-Based Storm Safety Switch Box for Home Appliance Protection
+
 An intelligent embedded system that automatically protects household appliances from storm-related electrical damage by detecting rain and thunder conditions and disconnecting power before dangerous surges occur.
 
 🌟 Overview
+
 Electrical storms, lightning strikes, and sudden voltage fluctuations can cause severe damage to household appliances. This project introduces a smart Arduino-powered protection system that continuously monitors environmental conditions using rain and sound sensors.
 When storm conditions are detected, the system instantly disconnects connected appliances through a relay module, minimizing the risk of electrical damage and improving household safety.
 
 🚀 Key Features
 
 ✅ Automatic Storm Detection
+
 ✅ Rain Sensor-Based Monitoring
+
 ✅ Thunder Detection Using Sound Sensor
+
 ✅ Fast Relay-Based Power Cutoff
+
 ✅ LED Status Indication
+
 ✅ Low-Cost Embedded Solution
+
 ✅ Automatic Recovery After Storm Conditions
+
 ✅ Compact and Easy-to-Install Design
 
 🎯 Problem Statement
 
 Traditional surge protectors and manual switching methods often fail to provide proactive protection during electrical storms.
+
 This project aims to:
+
 Detect storm conditions before electrical damage occurs
+
 Automatically disconnect appliances
+
 Reduce repair and replacement costs
+
 Improve electrical safety in homes and small businesses
 
 🏗️ System Architecture
@@ -58,6 +72,7 @@ Improve electrical safety in homes and small businesses
 
 
 🛠 Hardware Components
+
 | Component           | Quantity    |
 | ------------------- | ----------- |
 | Arduino UNO         | 1           |
@@ -72,31 +87,47 @@ Improve electrical safety in homes and small businesses
 💻 Software Requirements
 
 Arduino IDE
+
 Arduino UNO Board Package
+
 C/C++ Programming
 
 ⚙️ Working Principle
 
 Normal Condition:
+
   Rain sensor detects no rainfall
+  
   Sound sensor detects no thunder
+  
   Relay remains ON
+  
   Appliances receive power normally
+  
   Storm Condition
   
 When:
+
   Rain is detected OR
+  
   Thunder is detected
   
 The Arduino:
+
   Processes sensor data
+  
   Activates protection mode
+  
   Turns OFF relay
+  
   Disconnects appliances
+  
   Turns ON protection indicator LED
+  
 After conditions become safe, power is restored automatically.
 
 📈 Performance
+
 | Parameter                | Value       |
 | ------------------------ | ----------- |
 | Storm Detection Accuracy | 95%+        |
@@ -107,8 +138,8 @@ After conditions become safe, power is restored automatically.
 Based on prototype testing and validation results.
 
 🔌 Circuit Connections
+
     Rain Sensor
-    
       VCC  -> 5V
       GND  -> GND
       A0   -> Arduino A0
@@ -122,6 +153,7 @@ Based on prototype testing and validation results.
       IN  -> D7
 
 📷 Project Demonstration
+
     System States
     
     🟢 Normal Mode
@@ -154,6 +186,7 @@ Based on prototype testing and validation results.
     AI-Based Storm Prediction
 
 👨‍💻 Team Members
+
 | Name                   | USN        |
 | ---------------------- | ---------- |
 | Samarth Nagappa Tuppad | 1DB23EC132 |
@@ -162,11 +195,16 @@ Based on prototype testing and validation results.
 | V N Varshitha          | 1DB23EC172 |
 
 🎓 Academic Information
+
   Department: Electronics & Communication Engineering
+  
   Institution: Don Bosco Institute of Technology, Bengaluru
+  
   University: Visvesvaraya Technological University (VTU), Belagavi
+  
   Academic Year: 2025–2026
 
 📜 License
+
   This project is developed for academic and educational purposes.
 
