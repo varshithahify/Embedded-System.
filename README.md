@@ -24,6 +24,7 @@ Reduce repair and replacement costs
 Improve electrical safety in homes and small businesses
 
 🏗️ System Architecture
+
              +----------------+
              |  Power Supply  |
              +--------+-------+
@@ -34,8 +35,7 @@ Improve electrical safety in homes and small businesses
              +--------+-------+
                       |
        +--------------+--------------+
-       |                             |
-       v                             v
+       |                             |                         
 +--------------+             +--------------+
 | Rain Sensor  |             | Sound Sensor |
 +--------------+             +--------------+
