@@ -6,6 +6,7 @@ Electrical storms, lightning strikes, and sudden voltage fluctuations can cause 
 When storm conditions are detected, the system instantly disconnects connected appliances through a relay module, minimizing the risk of electrical damage and improving household safety.
 
 🚀 Key Features
+
 ✅ Automatic Storm Detection
 ✅ Rain Sensor-Based Monitoring
 ✅ Thunder Detection Using Sound Sensor
@@ -16,6 +17,7 @@ When storm conditions are detected, the system instantly disconnects connected a
 ✅ Compact and Easy-to-Install Design
 
 🎯 Problem Statement
+
 Traditional surge protectors and manual switching methods often fail to provide proactive protection during electrical storms.
 This project aims to:
 Detect storm conditions before electrical damage occurs
@@ -24,34 +26,36 @@ Reduce repair and replacement costs
 Improve electrical safety in homes and small businesses
 
 🏗️ System Architecture
+             
+                                   +----------------+
+                                   |  Power Supply  |
+                                   +--------+-------+
+                                            |
+                                            v
+                                   +----------------+
+                                   |  Arduino UNO   |
+                                   +--------+-------+
+                                            |
+                             +--------------+--------------+
+                             |                             |                         
+                      +--------------+             +--------------+
+                      | Rain Sensor  |             | Sound Sensor |
+                      +--------------+             +--------------+
+                             |                             |
+                             +-------------+---------------+
+                                           |
+                                           v
+                                    +---------------+
+                                    | Relay Module  |
+                                    +-------+-------+
+                                            |
+                                            v
+                                 +---------------------+
+                                 | Home Appliances     |
+                                 | (Protected Load)    |
+                                 +---------------------+
 
-             +----------------+
-             |  Power Supply  |
-             +--------+-------+
-                      |
-                      v
-             +----------------+
-             |  Arduino UNO   |
-             +--------+-------+
-                      |
-       +--------------+--------------+
-       |                             |                         
-+--------------+             +--------------+
-| Rain Sensor  |             | Sound Sensor |
-+--------------+             +--------------+
-       |                             |
-       +-------------+---------------+
-                     |
-                     v
-             +---------------+
-             | Relay Module  |
-             +-------+-------+
-                     |
-                     v
-          +---------------------+
-          | Home Appliances     |
-          | (Protected Load)    |
-          +---------------------+
+
 
 🛠 Hardware Components
 | Component           | Quantity    |
@@ -66,20 +70,24 @@ Improve electrical safety in homes and small businesses
 | 9V Battery          | 1           |
 
 💻 Software Requirements
+
 Arduino IDE
 Arduino UNO Board Package
 C/C++ Programming
 
 ⚙️ Working Principle
+
 Normal Condition:
   Rain sensor detects no rainfall
   Sound sensor detects no thunder
   Relay remains ON
   Appliances receive power normally
   Storm Condition
+  
 When:
   Rain is detected OR
   Thunder is detected
+  
 The Arduino:
   Processes sensor data
   Activates protection mode
@@ -100,6 +108,7 @@ Based on prototype testing and validation results.
 
 🔌 Circuit Connections
     Rain Sensor
+    
       VCC  -> 5V
       GND  -> GND
       A0   -> Arduino A0
@@ -114,6 +123,7 @@ Based on prototype testing and validation results.
 
 📷 Project Demonstration
     System States
+    
     🟢 Normal Mode
         Appliances Connected
         Green LED ON
@@ -123,6 +133,7 @@ Based on prototype testing and validation results.
         Red LED ON
   
 🎯 Applications
+
     Smart Homes
     Residential Buildings
     Rural Areas
@@ -132,6 +143,7 @@ Based on prototype testing and validation results.
     IoT Home Automation Systems
 
 🔮 Future Enhancements
+
     Wi-Fi Integration (ESP8266/ESP32)
     Mobile App Notifications
     GSM Alert System
